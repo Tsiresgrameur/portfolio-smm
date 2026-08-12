@@ -3,14 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Eliott — Freelance UI/UX Designer and Frontend Developer. Fast, clean and accessible digital products.">
+<meta name="description" content="Tsiresy — Freelance UI/UX Designer and Frontend Developer. Fast, clean and accessible digital products.">
 <meta name="keywords" content="freelance developer, UI designer, portfolio, Tailwind CSS, Alpine.js">
-<meta name="author" content="Eliott">
-<meta property="og:title" content="Eliott — Freelance UI/UX Designer">
+<meta name="author" content="Tsiresy">
+<meta property="og:title" content="Tsiresy — Freelance UI/UX Designer">
 <meta property="og:description" content="I design and build digital products that people love to use.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://eliott.dev">
-<title>Eliott — Freelance UI/UX Designer &amp; Frontend Dev</title>
+<title>Tsiresy — Freelance Social Media Manager</title>
 
 <script src="https://cdn.tailwindcss.com"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
@@ -72,6 +72,15 @@ background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/sv
 /* skill tag */
 .stag{transition:border-color .18s}
 
+.text-accent{
+  color:#D26A0A!important;
+}
+
+.bg-accent{
+  background-color: #D26A0A!important;
+
+}
+
 [x-cloak]{display:none!important}
 </style>
 </head>
@@ -84,16 +93,15 @@ background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/sv
   <nav class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between" aria-label="Main navigation">
 
     <a href="#hero" class="font-display font-bold text-xl tracking-tight relative z-10">
-      <span class="text-zinc-900 dark:text-white">eli</span><span class="text-accent">ott</span>
+      <span class="text-zinc-900 dark:text-white">Tsi</span><span class="text-accent">resy</span>
     </a>
 
     <ul class="hidden md:flex items-center gap-8 text-sm" role="list">
       <li><a href="#services" class="nl text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white transition-colors" :class="s==='services'?'on !text-zinc-900 dark:!text-white':''">Services</a></li>
-      <li><a href="#work"     class="nl text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white transition-colors" :class="s==='work'?'on !text-zinc-900 dark:!text-white':''">Work</a></li>
-      <li><a href="#about"   class="nl text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white transition-colors" :class="s==='about'?'on !text-zinc-900 dark:!text-white':''">About</a></li>
-      <li><a href="#reviews" class="nl text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white transition-colors" :class="s==='reviews'?'on !text-zinc-900 dark:!text-white':''">Reviews</a></li>
-      <li><a href="#blog"    class="nl text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white transition-colors" :class="s==='blog'?'on !text-zinc-900 dark:!text-white':''">Blog</a></li>
-      <li><a href="#contact" class="nl text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white transition-colors" :class="s==='contact'?'on !text-zinc-900 dark:!text-white':''">Contact</a></li>
+      <li><a href="#work"     class="nl text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white transition-colors" :class="s==='work'?'on !text-zinc-900 dark:!text-white':''">Réalisations</a></li>
+      <li><a href="#about"   class="nl text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white transition-colors" :class="s==='about'?'on !text-zinc-900 dark:!text-white':''">À propos</a></li>
+      <li><a href="#reviews" class="nl text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white transition-colors" :class="s==='reviews'?'on !text-zinc-900 dark:!text-white':''">Résultats</a></li>
+      <li><a href="#contact" class="nl text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white transition-colors" :class="s==='contact'?'on !text-zinc-900 dark:!text-white':''">Contacts</a></li>
     </ul>
 
     <div class="flex items-center gap-3">
@@ -104,7 +112,7 @@ background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/sv
       </button>
       <!-- hire me -->
       <a href="#contact" class="hidden md:inline-flex items-center gap-2 shimmer bg-accent text-white text-sm font-medium px-5 py-2 rounded-full hover:bg-accent-light transition-colors">
-        Hire me <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+        Me recruter <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
       </a>
       <!-- hamburger -->
       <button @click="mm=!mm" class="md:hidden w-9 h-9 flex items-center justify-center rounded-full border border-zinc-200 dark:border-zinc-800" :aria-expanded="mm" aria-label="Toggle menu">
@@ -149,14 +157,14 @@ background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/sv
           Bonjour, Je suis <span class="text-accent">Tsiresy</span>
         </h1>
         <p class="reveal d2 text-lg md:text-xl text-zinc-500 dark:text-zinc-400 font-light leading-relaxed max-w-md mb-10">
-          Freelance <strong class="font-medium text-zinc-700 dark:text-zinc-300">Social Media Manager </strong>. I design and build digital products that people love to use — fast, clean, and accessible.
+          Freelance <strong class="font-medium text-zinc-700 dark:text-zinc-300">Social Media Manager </strong>.je crée une présence digitale qui attire l’attention, construit une communauté et vous aide à atteindre vos objectifs.
         </p>
         <div class="reveal d3 flex flex-wrap gap-4">
           <a href="#work" class="shimmer inline-flex items-center gap-2 bg-zinc-900 dark:bg-white text-white dark:text-zinc-900 font-medium px-7 py-3.5 rounded-full hover:bg-zinc-700 dark:hover:bg-zinc-200 transition-colors text-sm">
-            View my work
+            Voir mes travaux
             <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
           </a>
-          <a href="#contact" class="inline-flex items-center gap-2 border border-zinc-300 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 font-medium px-7 py-3.5 rounded-full hover:bg-zinc-50 dark:hover:bg-zinc-900 transition-colors text-sm">Get in touch</a>
+          <a href="#contact" class="inline-flex items-center gap-2 border border-zinc-300 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 font-medium px-7 py-3.5 rounded-full hover:bg-zinc-50 dark:hover:bg-zinc-900 transition-colors text-sm">Me contacter</a>
         </div>
       </div>
 
@@ -175,33 +183,42 @@ background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/sv
 <section id="services" class="py-24 bg-zinc-50 dark:bg-zinc-900/40">
   <div class="max-w-6xl mx-auto px-6">
     <div class="mb-14">
-      <p class="reveal text-xs font-medium text-accent tracking-widest uppercase mb-3">What I do</p>
-      <h2 class="reveal d1 font-display font-bold text-4xl md:text-5xl text-zinc-900 dark:text-white">Services</h2>
+      <p class="reveal text-xs font-medium text-accent tracking-widest uppercase mb-3">Mes services</p>
     </div>
     <div class="grid md:grid-cols-3 gap-6">
 
       <article class="reveal d1 card-h group bg-white dark:bg-zinc-900 rounded-2xl p-8 border border-zinc-100 dark:border-zinc-800 hover:border-accent">
         <div class="w-12 h-12 flex items-center justify-center bg-orange-50 dark:bg-zinc-800 rounded-xl mb-6 group-hover:bg-accent/10 transition-colors">
-          <svg class="w-6 h-6 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17H3a2 2 0 01-2-2V5a2 2 0 012-2h14a2 2 0 012 2v10a2 2 0 01-2 2h-2"/></svg>
+          <svg class="w-6 h-6 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 5.5A2.5 2.5 0 0 1 6.5 3h11A2.5 2.5 0 0 1 20 5.5v8a2.5 2.5 0 0 1-2.5 2.5H11l-4.5 4v-4.5A2.5 2.5 0 0 1 4 13.5v-8Z"/>
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 7.5c-.8-1.1-2.75-.8-2.75.75 0 1.2 1.3 2.05 2.75 3.25 1.45-1.2 2.75-2.05 2.75-3.25 0-1.55-1.95-1.85-2.75-.75Z"/>
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.5 19v-2.5M16.25 17.75h2.5"/>
+          </svg>
         </div>
-        <h3 class="font-display font-bold text-xl text-zinc-900 dark:text-white mb-3">UI/UX Design</h3>
-        <p class="text-sm text-zinc-500 dark:text-zinc-400 leading-relaxed">From wireframes to polished Figma prototypes. Intuitive, visually compelling interfaces that convert visitors into users and put usability first.</p>
+        <h3 class="font-display font-bold text-xl text-zinc-900 dark:text-white mb-3">Création de contenu impactant</h3>
+        <p class="text-sm text-zinc-500 dark:text-zinc-400 leading-relaxed">
+          Je crée des visuels, vidéos et contenus captivants qui attirent l'attention dès les premières secondes. Chaque publication est pensée pour renforcer votre image de marque, augmenter l'engagement et faire ressortir votre entreprise face à la concurrence.</p>
       </article>
 
       <article class="reveal d2 card-h group bg-zinc-900 dark:bg-zinc-800 rounded-2xl p-8 border border-zinc-800 hover:border-accent">
         <div class="w-12 h-12 flex items-center justify-center bg-zinc-800 dark:bg-zinc-700 rounded-xl mb-6 group-hover:bg-accent/20 transition-colors">
-          <svg class="w-6 h-6 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
+          <svg class="w-6 h-6 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6.75 3v2.25M17.25 3v2.25M3.75 9.75h16.5M5.25 4.5h13.5A2.25 2.25 0 0 1 21 6.75v12A2.25 2.25 0 0 1 18.75 21H5.25A2.25 2.25 0 0 1 3 18.75v-12A2.25 2.25 0 0 1 5.25 4.5Z"/>
+          </svg>
         </div>
-        <h3 class="font-display font-bold text-xl text-white mb-3">Frontend Dev</h3>
-        <p class="text-sm text-zinc-400 leading-relaxed">Production-grade code with Tailwind CSS and Alpine.js. Pixel-perfect, fully responsive, SEO-friendly and blazing fast — no bloat, no heavy frameworks.</p>
+        <h3 class="font-display font-bold text-xl text-white mb-3">Gestion complète des réseaux sociaux</h3>
+        <p class="text-sm text-zinc-400 leading-relaxed">Je transforme vos réseaux sociaux en un véritable outil de visibilité et de conversion grâce à une stratégie de contenu adaptée à votre marque. De la création des publications à la gestion quotidienne de votre communauté, je vous aide à attirer, engager et fidéliser votre audience.</p>
       </article>
 
       <article class="reveal d3 card-h group bg-white dark:bg-zinc-900 rounded-2xl p-8 border border-zinc-100 dark:border-zinc-800 hover:border-accent">
         <div class="w-12 h-12 flex items-center justify-center bg-orange-50 dark:bg-zinc-800 rounded-xl mb-6 group-hover:bg-accent/10 transition-colors">
-          <svg class="w-6 h-6 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z"/></svg>
+          <svg class="w-6 h-6 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 19V5M4 19h16"/>
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 16l4-4 3 2 5-7"/>
+          </svg>
         </div>
-        <h3 class="font-display font-bold text-xl text-zinc-900 dark:text-white mb-3">Landing Pages</h3>
-        <p class="text-sm text-zinc-500 dark:text-zinc-400 leading-relaxed">High-converting pages for SaaS, apps and personal brands. Designed to communicate value instantly and drive action from the first scroll.</p>
+        <h3 class="font-display font-bold text-xl text-zinc-900 dark:text-white mb-3">Stratégie de croissance et développement de communauté</h3>
+        <p class="text-sm text-zinc-500 dark:text-zinc-400 leading-relaxed">J'élabore une stratégie sur mesure pour développer votre présence en ligne et transformer vos abonnés en clients potentiels. Grâce à une analyse continue des performances et à des actions ciblées, je favorise une croissance durable et mesurable de votre communauté.</p>
       </article>
 
     </div>
@@ -213,10 +230,10 @@ background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/sv
   <div class="max-w-6xl mx-auto px-6">
     <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-14">
       <div>
-        <p class="reveal text-xs font-medium text-accent tracking-widest uppercase mb-3">Portfolio</p>
+        <p class="reveal text-xs font-medium text-accent tracking-widest uppercase mb-3">Réalisations</p>
         <h2 class="reveal d1 font-display font-bold text-4xl md:text-5xl text-zinc-900 dark:text-white">Les pages gérées</h2>
       </div>
-      <a href="projects.html" class="reveal d1 text-sm font-medium text-zinc-500 dark:text-zinc-400 hover:text-accent transition-colors self-start sm:self-auto nl">All projects →</a>
+      <!-- <a href="projects.html" class="reveal d1 text-sm font-medium text-zinc-500 dark:text-zinc-400 hover:text-accent transition-colors self-start sm:self-auto nl">All projects →</a> -->
     </div>
 
     <div class="grid md:grid-cols-2 gap-6">
@@ -234,7 +251,7 @@ background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/sv
           <br>
             <h3 class="font-display font-bold text-2xl text-zinc-900 dark:text-white mb-2">Ce que je fais: </h3>
           <p class="text-sm text-zinc-500 dark:text-zinc-400 leading-relaxed mb-5">Optimiser le profil Facebook et Tik Tok<br>
-            <br>Elaborer un calendrier editorial, publier des visuels, des vidéos et strategie d'engagement<br><br>
+            <br>Elaborer un calendrier éditorial, publier des visuels, des vidéos et strategie d'engagement<br><br>
            Créer une identité de marque</p>
         </div>
       </article>
@@ -331,7 +348,7 @@ Mon parcours de développeur m’a permis de développer une solide culture num�
 <section id="reviews" class="py-24">
   <div class="max-w-6xl mx-auto px-6">
     <div class="mb-14">
-      <p class="reveal text-xs font-medium text-accent tracking-widest uppercase mb-3">Meta statistique</p>
+      <p class="reveal text-xs font-medium text-accent tracking-widest uppercase mb-3">Résultats</p>
       <h2 class="reveal d1 font-display font-bold text-4xl md:text-5xl text-zinc-900 dark:text-white">Comment est l'engagement ?</h2>
     </div>
 
@@ -356,76 +373,9 @@ Mon parcours de développeur m’a permis de développer une solide culture num�
   </div>
 </section>
 
-<!-- ═══ BLOG ═══ -->
-<section id="blog" class="py-24 bg-zinc-50 dark:bg-zinc-900/40">
-  <div class="max-w-6xl mx-auto px-6">
-    <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-14">
-      <div>
-        <p class="reveal text-xs font-medium text-accent tracking-widest uppercase mb-3">Thoughts</p>
-        <h2 class="reveal d1 font-display font-bold text-4xl md:text-5xl text-zinc-900 dark:text-white">From the blog</h2>
-      </div>
-      <a href="blog.html" class="reveal d1 text-sm font-medium text-zinc-500 dark:text-zinc-400 hover:text-accent transition-colors self-start sm:self-auto nl">All articles →</a>
-    </div>
-
-    <div class="grid md:grid-cols-3 gap-6">
-
-      <article class="reveal d1 card-h group bg-white dark:bg-zinc-900 rounded-2xl overflow-hidden border border-zinc-100 dark:border-zinc-800 hover:border-accent">
-        <div class="pf w-full h-44">
-          <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=700&q=80" alt="Why I ditched CSS frameworks" loading="lazy">
-        </div>
-        <div class="p-6">
-          <div class="flex items-center gap-3 mb-3">
-            <span class="text-xs bg-orange-50 dark:bg-zinc-800 text-accent border border-orange-200 dark:border-zinc-700 px-2.5 py-1 rounded-full">Design</span>
-            <span class="text-xs text-zinc-400">Mar 8, 2025</span>
-          </div>
-          <a href="blog-article.html">
-            <h3 class="font-display font-bold text-lg text-zinc-900 dark:text-white mb-2 group-hover:text-accent transition-colors">Why I ditched heavy CSS frameworks for Tailwind</h3>
-          </a>
-          <p class="text-sm text-zinc-500 dark:text-zinc-400 leading-relaxed mb-4">After years of fighting specificity wars, here's what finally convinced me to make the switch.</p>
-          <a href="blog-article.html" class="inline-flex items-center gap-1.5 text-sm font-medium text-zinc-900 dark:text-white nl">Read more →</a>
-        </div>
-      </article>
-
-      <article class="reveal d2 card-h group bg-white dark:bg-zinc-900 rounded-2xl overflow-hidden border border-zinc-100 dark:border-zinc-800 hover:border-accent">
-        <div class="pf w-full h-44">
-          <img src="https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?w=700&q=80" alt="Design systems" loading="lazy">
-        </div>
-        <div class="p-6">
-          <div class="flex items-center gap-3 mb-3">
-            <span class="text-xs bg-orange-50 dark:bg-zinc-800 text-accent border border-orange-200 dark:border-zinc-700 px-2.5 py-1 rounded-full">Dev</span>
-            <span class="text-xs text-zinc-400">Feb 21, 2025</span>
-          </div>
-          <a href="blog-article.html">
-            <h3 class="font-display font-bold text-lg text-zinc-900 dark:text-white mb-2 group-hover:text-accent transition-colors">Building a design system from scratch in a weekend</h3>
-          </a>
-          <p class="text-sm text-zinc-500 dark:text-zinc-400 leading-relaxed mb-4">Tokens, components, docs — the process I follow to spin up a coherent system in 48 hours.</p>
-          <a href="blog-article.html" class="inline-flex items-center gap-1.5 text-sm font-medium text-zinc-900 dark:text-white nl">Read more →</a>
-        </div>
-      </article>
-
-      <article class="reveal d3 card-h group bg-white dark:bg-zinc-900 rounded-2xl overflow-hidden border border-zinc-100 dark:border-zinc-800 hover:border-accent">
-        <div class="pf w-full h-44">
-          <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=700&q=80" alt="Freelance lessons" loading="lazy">
-        </div>
-        <div class="p-6">
-          <div class="flex items-center gap-3 mb-3">
-            <span class="text-xs bg-orange-50 dark:bg-zinc-800 text-accent border border-orange-200 dark:border-zinc-700 px-2.5 py-1 rounded-full">Freelance</span>
-            <span class="text-xs text-zinc-400">Jan 14, 2025</span>
-          </div>
-          <a href="blog-article.html">
-            <h3 class="font-display font-bold text-lg text-zinc-900 dark:text-white mb-2 group-hover:text-accent transition-colors">5 lessons from my first year of full-time freelancing</h3>
-          </a>
-          <p class="text-sm text-zinc-500 dark:text-zinc-400 leading-relaxed mb-4">Contracts, pricing, scope creep — the things nobody tells you before you go solo.</p>
-          <a href="blog-article.html" class="inline-flex items-center gap-1.5 text-sm font-medium text-zinc-900 dark:text-white nl">Read more →</a>
-        </div>
-      </article>
-
-    </div>
-  </div>
-</section>
 
 <!-- ═══ CONTACT ═══ -->
-<section id="contact" class="py-24">
+<section id="contact" class="py-24 bg-zinc-50 dark:bg-zinc-900/40">
   <div class="max-w-6xl mx-auto px-6">
     <div class="bg-zinc-900 dark:bg-zinc-800 rounded-3xl p-10 md:p-16 relative overflow-hidden">
       <div class="absolute top-0 right-0 w-64 h-64 bg-accent/20 rounded-full blur-3xl pointer-events-none" aria-hidden="true"></div>
@@ -434,29 +384,41 @@ Mon parcours de développeur m’a permis de développer une solide culture num�
       <div class="relative z-10 grid md:grid-cols-2 gap-12 items-start">
 
         <div>
-          <p class="reveal text-xs font-medium text-accent tracking-widest uppercase mb-3">Get in touch</p>
-          <h2 class="reveal d1 font-display font-bold text-4xl md:text-5xl text-white leading-tight mb-5">Let's work<br>together</h2>
-          <p class="reveal d2 text-zinc-400 leading-relaxed mb-8">I'm open to UI/UX and frontend missions, short or long-term. Landing page, full product redesign, or just a second pair of eyes — let's talk.</p>
+          <p class="reveal text-xs font-medium text-accent tracking-widest uppercase mb-3">Contacts</p>
+          <h2 class="reveal d1 font-display font-bold text-4xl md:text-5xl text-white leading-tight mb-5">Intéressé(e) ?</h2>
+          <p class="reveal d2 text-zinc-400 leading-relaxed mb-8">
+            Votre marque mérite plus qu’une simple présence sur les réseaux sociaux. Échangeons sur vos objectifs et construisons ensemble une stratégie qui attire, engage et convertit.</p>
 
           <div class="reveal d3 flex flex-col gap-4">
-            <a href="mailto:hello@eliott.dev" class="group flex items-center gap-3 text-zinc-400 hover:text-white transition-colors">
+            <a href="mailto:tsiresgrammeur@gmail.com" class="group flex items-center gap-3 text-zinc-400 hover:text-white transition-colors">
               <span class="w-9 h-9 flex items-center justify-center bg-zinc-800 rounded-lg group-hover:bg-accent/20 transition-colors shrink-0">
                 <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
               </span>
-              <span class="text-sm">hello@eliott.dev</span>
+              <span class="text-sm">tsiresgrammeur@gmail.com</span>
             </a>
-            <a href="https://linkedin.com/in/eliott-dev" rel="noopener noreferrer" target="_blank" class="group flex items-center gap-3 text-zinc-400 hover:text-white transition-colors">
+            <a href="https://www.linkedin.com/in/radilofera-tahin-ny-avo-tsiresy-94515120a/" rel="noopener noreferrer" target="_blank" class="group flex items-center gap-3 text-zinc-400 hover:text-white transition-colors">
               <span class="w-9 h-9 flex items-center justify-center bg-zinc-800 rounded-lg group-hover:bg-accent/20 transition-colors shrink-0">
                 <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
               </span>
-              <span class="text-sm">linkedin.com/in/eliott-dev</span>
+              <span class="text-sm">Tsiresy RADILOFERA</span>
             </a>
-            <a href="https://github.com/eliott-dev" rel="noopener noreferrer" target="_blank" class="group flex items-center gap-3 text-zinc-400 hover:text-white transition-colors">
-              <span class="w-9 h-9 flex items-center justify-center bg-zinc-800 rounded-lg group-hover:bg-accent/20 transition-colors shrink-0">
-                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-              </span>
-              <span class="text-sm">github.com/eliott-dev</span>
-            </a>
+
+            <a href="https://wa.me/+261377978298"
+   rel="noopener noreferrer"
+   target="_blank"
+   class="group flex items-center gap-3 text-zinc-400 hover:text-white transition-colors">
+
+  <span class="w-9 h-9 flex items-center justify-center bg-zinc-800 rounded-lg group-hover:bg-accent/20 transition-colors shrink-0">
+
+    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M20.52 3.48A11.86 11.86 0 0 0 12.04 0C5.5 0 .18 5.32.18 11.86c0 2.09.55 4.13 1.59 5.92L.1 24l6.36-1.67a11.85 11.85 0 0 0 5.58 1.42h.01c6.54 0 11.86-5.32 11.86-11.86 0-3.17-1.23-6.15-3.39-8.41ZM12.05 21.72h-.01a9.83 9.83 0 0 1-5.01-1.37l-.36-.21-3.77.99 1.01-3.68-.23-.38a9.82 9.82 0 0 1-1.5-5.21C2.18 6.43 6.61 2 12.04 2c2.63 0 5.1 1.02 6.96 2.88a9.82 9.82 0 0 1 2.9 6.99c0 5.43-4.42 9.85-9.85 9.85Zm5.4-7.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.47-.89-.79-1.49-1.76-1.67-2.06-.17-.3-.02-.46.13-.61.14-.14.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.61-.92-2.21-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.49s1.07 2.89 1.22 3.09c.15.2 2.1 3.21 5.08 4.5.71.31 1.27.5 1.71.64.72.23 1.38.2 1.9.12.58-.09 1.76-.72 2.01-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35Z"/>
+    </svg>
+
+  </span>
+
+  <span class="text-sm">+261 37 79 782 98</span>
+
+</a>
           </div>
         </div>
 
@@ -465,28 +427,28 @@ Mon parcours de développeur m’a permis de développer une solide culture num�
             <div class="flex flex-col gap-4">
               <div class="grid sm:grid-cols-2 gap-4">
                 <div>
-                  <label for="fname" class="block text-xs font-medium text-zinc-400 mb-1.5">Name <span aria-hidden="true">*</span></label>
-                  <input type="text" id="fname" name="name" placeholder="Jane Smith" required autocomplete="name"
+                  <label for="fname" class="block text-xs font-medium text-zinc-400 mb-1.5">Nom <span aria-hidden="true">*</span></label>
+                  <input type="text" id="fname" name="name" placeholder="Votre nom" required autocomplete="name"
                     class="w-full bg-zinc-800 border border-zinc-700 text-white text-sm rounded-xl px-4 py-3 placeholder-zinc-600 focus:outline-none focus:border-accent transition-colors">
                 </div>
                 <div>
                   <label for="femail" class="block text-xs font-medium text-zinc-400 mb-1.5">Email <span aria-hidden="true">*</span></label>
-                  <input type="email" id="femail" name="email" placeholder="jane@company.com" required autocomplete="email"
+                  <input type="email" id="femail" name="email" placeholder="Votre email" required autocomplete="email"
                     class="w-full bg-zinc-800 border border-zinc-700 text-white text-sm rounded-xl px-4 py-3 placeholder-zinc-600 focus:outline-none focus:border-accent transition-colors">
                 </div>
               </div>
               <div>
-                <label for="fsubject" class="block text-xs font-medium text-zinc-400 mb-1.5">Subject</label>
-                <input type="text" id="fsubject" name="subject" placeholder="Project inquiry"
+                <label for="fsubject" class="block text-xs font-medium text-zinc-400 mb-1.5">Objet</label>
+                <input type="text" id="fsubject" name="subject" placeholder="Objet"
                   class="w-full bg-zinc-800 border border-zinc-700 text-white text-sm rounded-xl px-4 py-3 placeholder-zinc-600 focus:outline-none focus:border-accent transition-colors">
               </div>
               <div>
                 <label for="fmessage" class="block text-xs font-medium text-zinc-400 mb-1.5">Message <span aria-hidden="true">*</span></label>
-                <textarea id="fmessage" name="message" rows="4" placeholder="Tell me about your project..." required
+                <textarea id="fmessage" name="message" rows="4" placeholder="Parlez-moi de votre projet..." required
                   class="w-full bg-zinc-800 border border-zinc-700 text-white text-sm rounded-xl px-4 py-3 placeholder-zinc-600 focus:outline-none focus:border-accent transition-colors resize-none"></textarea>
               </div>
               <button type="submit" class="shimmer w-full bg-accent text-white font-display font-bold text-sm py-3.5 rounded-xl hover:bg-accent-light transition-colors">
-                Send message →
+                Envoyer →
               </button>
             </div>
           </form>
@@ -499,16 +461,6 @@ Mon parcours de développeur m’a permis de développer une solide culture num�
 
 </main>
 
-<footer class="border-t border-zinc-100 dark:border-zinc-900">
-  <div class="max-w-6xl mx-auto px-6 py-8 flex flex-col sm:flex-row items-center justify-between gap-4">
-    <p class="text-sm text-zinc-400">© <span id="yr"></span> Eliott. All rights reserved. <br> Developed by <a href="https://lbegey78.gumroad.com/" target="_blank" class="font-bold">Laurent Begey</a> • Distributed by <a href="https://themewagon.com/" target="_blank" class="font-bold">ThemeWagon</a></p>
-    <p class="text-xs text-zinc-500">Built with
-      <a href="https://tailwindcss.com" rel="noopener noreferrer" target="_blank" class="hover:text-accent transition-colors">Tailwind CSS</a>
-      &amp;
-      <a href="https://alpinejs.dev" rel="noopener noreferrer" target="_blank" class="hover:text-accent transition-colors">Alpine.js</a>
-    </p>
-  </div>
-</footer>
 
 <script>
 function app() {
