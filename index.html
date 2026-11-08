@@ -3,10 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Tsiresy — Freelance UI/UX Designer and Frontend Developer. Fast, clean and accessible digital products.">
+<meta name="description" content="Tsiresy — Freelance Social Media Manager">
 <meta name="keywords" content="freelance developer, UI designer, portfolio, Tailwind CSS, Alpine.js">
 <meta name="author" content="Tsiresy">
-<meta property="og:title" content="Tsiresy — Freelance UI/UX Designer">
+<meta property="og:title" content="Tsiresy — Freelance Social Media Manager">
 <meta property="og:description" content="I design and build digital products that people love to use.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://eliott.dev">
@@ -93,14 +93,14 @@ background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/sv
   <nav class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between" aria-label="Main navigation">
 
     <a href="#hero" class="font-display font-bold text-xl tracking-tight relative z-10">
-      <span class="text-zinc-900 dark:text-white">Tsi</span><span class="text-accent">resy</span>
+      <span class="text-zinc-900 dark:text-white"></span><span class="text-accent">Tsiresy</span>
     </a>
 
     <ul class="hidden md:flex items-center gap-8 text-sm" role="list">
       <li><a href="#services" class="nl text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white transition-colors" :class="s==='services'?'on !text-zinc-900 dark:!text-white':''">Services</a></li>
-      <li><a href="#work"     class="nl text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white transition-colors" :class="s==='work'?'on !text-zinc-900 dark:!text-white':''">Réalisations</a></li>
+      <li><a href="#realisation"     class="nl text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white transition-colors" :class="s==='realisation'?'on !text-zinc-900 dark:!text-white':''">Réalisations</a></li>
       <li><a href="#about"   class="nl text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white transition-colors" :class="s==='about'?'on !text-zinc-900 dark:!text-white':''">À propos</a></li>
-      <li><a href="#reviews" class="nl text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white transition-colors" :class="s==='reviews'?'on !text-zinc-900 dark:!text-white':''">Résultats</a></li>
+      <li><a href="#resultat" class="nl text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white transition-colors" :class="s==='resultat'?'on !text-zinc-900 dark:!text-white':''">Résultats</a></li>
       <li><a href="#contact" class="nl text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white transition-colors" :class="s==='contact'?'on !text-zinc-900 dark:!text-white':''">Contacts</a></li>
     </ul>
 
@@ -129,9 +129,9 @@ background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/sv
     class="md:hidden bg-white dark:bg-zinc-950 border-t border-zinc-100 dark:border-zinc-900">
     <ul class="flex flex-col px-6 py-5 gap-4 text-sm font-medium" role="list">
       <li><a href="#services" @click="mm=false" class="block text-zinc-700 dark:text-zinc-300 hover:text-accent transition-colors">Services</a></li>
-      <li><a href="#work"     @click="mm=false" class="block text-zinc-700 dark:text-zinc-300 hover:text-accent transition-colors">Work</a></li>
+      <li><a href="#realisation"     @click="mm=false" class="block text-zinc-700 dark:text-zinc-300 hover:text-accent transition-colors">realisation</a></li>
       <li><a href="#about"   @click="mm=false" class="block text-zinc-700 dark:text-zinc-300 hover:text-accent transition-colors">About</a></li>
-      <li><a href="#reviews" @click="mm=false" class="block text-zinc-700 dark:text-zinc-300 hover:text-accent transition-colors">Reviews</a></li>
+      <li><a href="#resultat" @click="mm=false" class="block text-zinc-700 dark:text-zinc-300 hover:text-accent transition-colors">resultat</a></li>
       <li><a href="#blog"    @click="mm=false" class="block text-zinc-700 dark:text-zinc-300 hover:text-accent transition-colors">Blog</a></li>
       <li><a href="#contact" @click="mm=false" class="block text-zinc-700 dark:text-zinc-300 hover:text-accent transition-colors">Contact</a></li>
       <li class="pt-2 border-t border-zinc-100 dark:border-zinc-900">
@@ -160,7 +160,7 @@ background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/sv
           Freelance <strong class="font-medium text-zinc-700 dark:text-zinc-300">Social Media Manager </strong>.je crée une présence digitale qui attire l’attention, construit une communauté et vous aide à atteindre vos objectifs.
         </p>
         <div class="reveal d3 flex flex-wrap gap-4">
-          <a href="#work" class="shimmer inline-flex items-center gap-2 bg-zinc-900 dark:bg-white text-white dark:text-zinc-900 font-medium px-7 py-3.5 rounded-full hover:bg-zinc-700 dark:hover:bg-zinc-200 transition-colors text-sm">
+          <a href="#realisation" class="shimmer inline-flex items-center gap-2 bg-zinc-900 dark:bg-white text-white dark:text-zinc-900 font-medium px-7 py-3.5 rounded-full hover:bg-zinc-700 dark:hover:bg-zinc-200 transition-colors text-sm">
             Voir mes travaux
             <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
           </a>
@@ -225,8 +225,8 @@ background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/sv
   </div>
 </section>
 
-<!-- ═══ WORK ═══ -->
-<section id="work" class="py-24">
+<!-- ═══ realisation ═══ -->
+<section id="realisation" class="py-24">
   <div class="max-w-6xl mx-auto px-6">
     <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-14">
       <div>
@@ -345,7 +345,7 @@ Mon parcours de développeur m’a permis de développer une solide culture num�
 </section>
 
 <!-- ═══ TESTIMONIALS ═══ -->
-<section id="reviews" class="py-24">
+<section id="resultat" class="py-24">
   <div class="max-w-6xl mx-auto px-6">
     <div class="mb-14">
       <p class="reveal text-xs font-medium text-accent tracking-widest uppercase mb-3">Résultats</p>
@@ -355,7 +355,7 @@ Mon parcours de développeur m’a permis de développer une solide culture num�
 
     <div class="grid xl:grid-cols-3 gap-6">
 
-          <img src="Photo/passeport_statistique.jpg" class="w-full h-full" alt="Why I ditched CSS frameworks" loading="lazy">
+          <img src="Photo/passeport_statistique.jpg" class="w-full h-full" alt="Why I ditched CSS framerealisations" loading="lazy">
 
           <img src="Photo/IA_statistique.jpg" alt="Design systems" loading="lazy">
 
@@ -495,7 +495,7 @@ function app() {
     updateSection() {
       const atBottom = (window.innerHeight + window.scrollY) >= document.body.scrollHeight - 60;
       if (atBottom) { this.s = 'contact'; return; }
-      const ids = ['contact','blog','reviews','about','work','services','hero'];
+      const ids = ['contact','blog','resultat','about','realisation','services','hero'];
       for (const id of ids) {
         const el = document.getElementById(id);
         if (el && window.scrollY >= el.offsetTop - 130) { this.s = id; return; }
